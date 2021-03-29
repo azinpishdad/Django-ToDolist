@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" >
+</head>
+
+<body>
+    
+        
+        <form  action='/getinput' method="POST">
+          {% csrf_token %}
+            <h2>ToDo List</h2>
+        <div>
+          
+          <div>
+            <label>work:</label>
+            <input type="text" name="work" id="work" placeholder="your work...">
+          </div>
+        </div>
+
+         
+        <div>
+            <input type="submit" value="Submit">
+            {{ workinput }}
+          </div>
+        </div>   
+        </form>
+        <h2>Database data : </h2>
+        {% for a in workstodo %}
+          {{a.work}}
+          <br>
+          {% endfor %}
+  
+</body>
+</html>

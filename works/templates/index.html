@@ -17,21 +17,28 @@
         <div>
           
           <div>
-            <label>work:</label>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" value=""><br>
+            <br>
+            <label>Work:</label>
             <input type="text" name="work" id="work" placeholder="your work...">
+            </br>
           </div>
         </div>
 
          
         <div>
-            <input type="submit" value="Submit">
+            </br>
+            <input type="submit" name="insert" value="insert">
+            <input type="submit" name="delete" value="delete">
+            <input type="submit" name="update" value="update">
             {{ workinput }}
           </div>
         </div>   
         </form>
         <h2>Database data : </h2>
         {% for a in workstodo %}
-          {{a.work}}
+        {{a.id}} : {{a.work}}
           <br>
           {% endfor %}
   

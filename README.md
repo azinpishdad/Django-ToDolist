@@ -5,8 +5,8 @@ this project help you to manage your tasks like: todolist or even reminder appli
 
 ## features
 - [x] insert
-- [ ] delete
-- [ ] update
+- [x] delete
+- [x] update
 - [ ] date
 - [ ] location
 - [ ] grouping
